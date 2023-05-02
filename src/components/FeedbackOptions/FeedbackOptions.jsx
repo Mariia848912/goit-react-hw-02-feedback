@@ -1,12 +1,11 @@
 import css from './FeedbackOptions.module.css';
 import PropTypes from 'prop-types';
-import { nanoid } from 'nanoid';
 
 export const FeedbackOptions = ({ onLeaveFeedback, options }) => {
   return (
     <ul className={css.buttonsList}>
       {options.map(option => (
-        <li key={nanoid()} className={css.buttonsListItem}>
+        <li key={option} className={css.buttonsListItem}>
           <button
             type="button"
             className={css.button}
@@ -22,5 +21,5 @@ export const FeedbackOptions = ({ onLeaveFeedback, options }) => {
 
 FeedbackOptions.propTypes = {
   onLeaveFeedback: PropTypes.func.isRequired,
-  options: PropTypes.arrayOf(PropTypes.string),
+  options: PropTypes.arrayOf(PropTypes.string).isRequired
 };
