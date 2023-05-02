@@ -1,0 +1,23 @@
+.buttonsList {
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+  margin-left: 10px;
+}
+
+.button {
+  padding: 3px 7px 3px 7px;
+
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+
+  background-color: #ffffff;
+  text-transform: capitalize;
+
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.button:hover {
+  background-color: #00b3ff;
+}
