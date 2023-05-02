@@ -1,7 +1,7 @@
 .buttonsList {
   display: flex;
   gap: 10px;
-  justify-content: start;
+  /* justify-content: start; */
   margin-left: 10px;
 }
 
